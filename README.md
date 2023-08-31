@@ -3,7 +3,7 @@ A to-do list keeping track of assignments, chores, and obligations needed to be 
 Consists of todos with title of assignment and description and progress.
 
 # Install
-Click on green Code button's dropdown
+Click on green Code button's dropdown \n
 Select HTTPS and copy the link
 Go to terminal and clone the repository with command git clone -url
 Then cd into the repository's directory
