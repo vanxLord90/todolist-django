@@ -5,7 +5,7 @@ Consists of todos with title of assignment and description and progress.
 
 
 # Install
-Click on green Code button's dropdown
+Click on green Code button's dropdown 
 
 Select HTTPS and copy the link
 
@@ -13,7 +13,15 @@ Go to terminal and clone the repository with command git clone -url
 
 Then cd into the repository's directory
 
-In terminal, install packages with command pip install -r requirements.txt
+In terminal, install packages with command 
+
+                            pip install -r requirements.txt
+                            
+install node packages with: 
+
+                            npm install bootstrap@4.6.0 reactstrap@8.9.0 --legacy-peer-deps
+                            
+                            npm install axios@0.21.1
 
 
 # Run
