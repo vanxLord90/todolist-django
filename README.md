@@ -46,7 +46,7 @@ You will be in Incomplete section
 
 Click on 'add a task'
 
-Enter title of assigment, and description for title
+Enter title of assigment, and description, date and priority for title
 
 Click save
 
