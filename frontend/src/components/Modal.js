@@ -31,6 +31,7 @@ export default class CustomModal extends Component {
     this.setState({ activeItem });
   };
 
+
   render() {
     const { toggle, onSave } = this.props;
 
@@ -60,6 +61,33 @@ export default class CustomModal extends Component {
                 onChange={this.handleChange}
                 placeholder="Enter Todo description"
               />
+            </FormGroup>
+            <FormGroup>
+              <Label for="todo-dueDate">Due Date:</Label>
+                <Input
+                  type="date"
+                  name="due_date"
+                  id="todo-dueDate"
+                  value={this.state.activeItem.due_date}
+                  onChange={this.handleChange}
+                />
+            </FormGroup>
+            <FormGroup>
+              <Label for="todo-priority">Priority</Label>
+              <Input
+                type="text"
+                list='Priority-List'
+                id="todo-priority"
+                name="priority"
+                value={this.state.activeItem.priority}
+                onChange={this.handleChange}
+                placeholder="Select Todo Priority"
+              />
+              <datalist id="Priority-List">
+                <option value="Low" />
+                <option value="Medium" />
+                <option value="High" />
+              </datalist>
             </FormGroup>
             <FormGroup check>
               <Label check>

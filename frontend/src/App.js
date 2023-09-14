@@ -8,10 +8,12 @@ class App extends Component {
     this.state = {
       viewCompleted: false,
       todoList: [],
-      modal: false,
+      modal:  false,
       activeItem: {
         title: "",
         description: "",
+        due_date: "",
+        priority: "",
         completed: false,
       },
     };
@@ -53,7 +55,7 @@ class App extends Component {
   };
 
   createItem = () => {
-    const item = { title: "", description: "", completed: false };
+    const item = { title: "", description: "",due_date:"", priority:"", completed: false };
 
     this.setState({ activeItem: item, modal: !this.state.modal });
   };
@@ -107,6 +109,22 @@ class App extends Component {
           title={item.description}
         >
           {item.title}
+        </span>
+        <span
+          className={`todo-dueDate mr-2 ${
+            this.state.viewCompleted ? "completed-todo" : ""
+          }`}
+          due_date={item.description}
+        >
+          {item.due_date}
+        </span>
+        <span
+          className={`todo-priority mr-2 ${
+            this.state.viewCompleted ? "completed-todo" : ""
+          }`}
+          priority={item.description}
+        >
+          {item.priority}
         </span>
         <span>
           <button
