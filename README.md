@@ -23,6 +23,10 @@ install node packages with:
                             
                             npm install axios@0.21.1
 
+Install MongoDB and create a free cluster
+
+Follow the steps on https://www.mongodb.com/basics/clusters/mongodb-cluster-setup 
+
 
 # Run
 cd into directory called "backend"
