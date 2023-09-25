@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.text-container {
+  white-space: pre-wrap;
+  width: 100px; /* Change this value to your desired character width */
+}

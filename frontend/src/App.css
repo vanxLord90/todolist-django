@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+
+.text-container {
+  white-space: pre-wrap;
+  max-width: 100px; /* Change this value to your desired character width */
+}

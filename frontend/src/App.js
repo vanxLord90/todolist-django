@@ -108,7 +108,9 @@ class App extends Component {
           }`}
           title={item.description}
         >
-          {item.title}
+          <div className="text-container">
+            {item.title}
+          </div>
         </span>
         <span
           className={`todo-dueDate mr-2 ${
@@ -116,7 +118,9 @@ class App extends Component {
           }`}
           due_date={item.description}
         >
-          {item.due_date}
+          <div className="text-container">
+            {item.due_date}
+          </div>
         </span>
         <span
           className={`todo-priority mr-2 ${
@@ -124,7 +128,9 @@ class App extends Component {
           }`}
           priority={item.description}
         >
+          <div className="text-container">
           {item.priority}
+          </div>
         </span>
         <span>
           <button
